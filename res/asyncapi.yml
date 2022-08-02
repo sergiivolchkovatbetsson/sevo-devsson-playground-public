@@ -17,4 +17,4 @@ channels:
 components:
   schemas:
     Transaction:
-      $ref: 'openapi.yml#/components/schemas/Transaction'
+      $ref: 'https://raw.githubusercontent.com/sergiivolchkovatbetsson/sevo-devsson-playground-public/testing-asyncapi-ref/res/openapi.yml#/components/schemas/Transaction'
