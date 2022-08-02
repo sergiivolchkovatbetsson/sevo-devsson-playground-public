@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: sevo-devsson-playground-asyncapi
+  description: Testing Async API by Sergii Volchkov.
+spec:
+  type: asyncapi
+  lifecycle: experimental
+  owner: sustainable-growth
+  definition:
+    $text: res/asyncapi.yml

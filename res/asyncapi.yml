@@ -1,0 +1,20 @@
+asyncapi: 2.3.0
+info:
+  title: Transaction Kafka Topic
+  version: 1.0.0
+  description: All transactions as Kafka events. 
+defaultContentType: application/json
+channels:
+  sevo-devsson-playground-asyncapi:
+    subscribe:
+      summary: Subscribe to this topic to be notified about transactions.
+      message:
+        name: Transaction
+        summary: Event describing a transaction.
+        description: hello
+        payload:
+          $ref: '#/components/schemas/Transaction'
+components:
+  schemas:
+    Transaction:
+      $ref: 'https://raw.githubusercontent.com/sergiivolchkovatbetsson/sevo-devsson-playground-public/testing-asyncapi-ref/res/openapi.yml#/components/schemas/Transaction'
